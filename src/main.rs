@@ -12,7 +12,7 @@ use std::io::Write;
 // Sally Weber Web Developer 2015-12-18
 
 // Inputs: search string
-// Process: filter in every fields
+// Process: filter in firstname or lastname
 // outputs: search results
 
 fn get_input<T: std::str::FromStr>(prompt: &str) -> T {
@@ -71,5 +71,7 @@ fn main() {
             ("separation_date", "2015-12-18"),
         ]),
     ];
+
+    // Get search_query, "Enter a search string:"
     println!("Hello, world!");
 }
