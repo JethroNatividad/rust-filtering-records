@@ -109,5 +109,5 @@ fn main() {
         })
         .collect();
     // show table
-    println!("Hello, world!");
+    assert!(print_stdout(employees_table.with_title()).is_ok());
 }
