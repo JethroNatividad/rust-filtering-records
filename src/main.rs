@@ -13,5 +13,43 @@
 // outputs: search results
 
 fn main() {
+    let dataset: Vec<HashMap<&str, &str>> = vec![
+        HashMap::from([
+            ("first_name", "John"),
+            ("last_name", "Johnson"),
+            ("position", "Manager"),
+            ("separation_date", "2016-12-31"),
+        ]),
+        HashMap::from([
+            ("first_name", "Tou"),
+            ("last_name", "Xiong"),
+            ("position", "Software Engineer"),
+            ("separation_date", "2016-10-05"),
+        ]),
+        HashMap::from([
+            ("first_name", "Michaela"),
+            ("last_name", "Michaelson"),
+            ("position", "District Manager"),
+            ("separation_date", "2015-12-19"),
+        ]),
+        HashMap::from([
+            ("first_name", "Jake"),
+            ("last_name", "Jacobson"),
+            ("position", "Programmer"),
+            ("separation_date", ""),
+        ]),
+        HashMap::from([
+            ("first_name", "Jacquelyn"),
+            ("last_name", "Jackson"),
+            ("position", "DBA"),
+            ("separation_date", ""),
+        ]),
+        HashMap::from([
+            ("first_name", "Sally"),
+            ("last_name", "Weber"),
+            ("position", "Web Developer"),
+            ("separation_date", "2015-12-18"),
+        ]),
+    ];
     println!("Hello, world!");
 }
