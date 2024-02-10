@@ -1,3 +1,6 @@
+use std::io;
+use std::io::Write;
+
 // Create a program that takes in a search string and filters this dataset and print by tabular format.
 // Dataset:
 // First Name Last Name Position Separation date
