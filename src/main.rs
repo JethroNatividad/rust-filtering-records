@@ -99,6 +99,15 @@ fn main() {
         .collect();
 
     // convert to vec of struct table
+    let employees_table: Vec<Employee> = result
+        .into_iter()
+        .map(|mut employee| Employee {
+            first_name: employee.remove("first_name").unwrap().to_string(),
+            last_name: employee.remove("last_name").unwrap().to_string(),
+            position: employee.remove("position").unwrap().to_string(),
+            separation_date: employee.remove("separation_date").unwrap().to_string(),
+        })
+        .collect();
     // show table
     println!("Hello, world!");
 }
