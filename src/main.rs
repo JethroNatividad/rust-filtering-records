@@ -73,5 +73,10 @@ fn main() {
     ];
 
     // Get search_query, "Enter a search string:"
+    // Search in firstname or lastname
+    // store result in vec of hashmap
+
+    // convert to vec of struct table
+    // show table
     println!("Hello, world!");
 }
