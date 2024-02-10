@@ -33,6 +33,18 @@ fn get_input<T: std::str::FromStr>(prompt: &str) -> T {
     }
 }
 
+#[derive(Table)]
+struct Employee {
+    #[table(title = "First Name")]
+    first_name: String,
+    #[table(title = "Last Name")]
+    last_name: String,
+    #[table(title = "Position")]
+    position: String,
+    #[table(title = "Separation Date")]
+    separation_date: String,
+}
+
 fn main() {
     let dataset: Vec<HashMap<&str, &str>> = vec![
         HashMap::from([
