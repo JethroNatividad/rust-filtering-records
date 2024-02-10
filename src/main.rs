@@ -73,6 +73,7 @@ fn main() {
     ];
 
     // Get search_query, "Enter a search string:"
+    let search_query: String = get_input("Enter a search string: ");
     // Search in firstname or lastname
     // store result in vec of hashmap
 
