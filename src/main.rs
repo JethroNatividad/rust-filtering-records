@@ -94,7 +94,7 @@ fn main() {
         .into_iter()
         .filter(|employee| {
             employee.get("first_name").unwrap().contains(&search_query)
-                || employee.get("&last_name").unwrap().contains(&search_query)
+                || employee.get("last_name").unwrap().contains(&search_query)
         })
         .collect();
 
