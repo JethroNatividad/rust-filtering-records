@@ -1,3 +1,4 @@
+use cli_table::{print_stdout, Table, WithTitle};
 use std::collections::HashMap;
 use std::io;
 use std::io::Write;
