@@ -1,3 +1,4 @@
+use std::collections::HashMap;
 use std::io;
 use std::io::Write;
 
@@ -76,6 +77,13 @@ fn main() {
     let search_query: String = get_input("Enter a search string: ");
     // Search in firstname or lastname
     // store result in vec of hashmap
+    let result: Vec<HashMap<&str, &str>> = dataset
+        .into_iter()
+        .filter(|employee| {
+            employee.get("first_name").unwrap().contains(&search_query)
+                || employee.get("&last_name").unwrap().contains(&search_query)
+        })
+        .collect();
 
     // convert to vec of struct table
     // show table
