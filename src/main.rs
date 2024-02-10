@@ -98,6 +98,10 @@ fn main() {
         })
         .collect();
 
+    if result.is_empty() {
+        return println!("No results found!");
+    }
+
     // convert to vec of struct table
     let employees_table: Vec<Employee> = result
         .into_iter()
