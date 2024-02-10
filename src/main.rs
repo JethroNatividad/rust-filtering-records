@@ -8,6 +8,10 @@
 // Jacquelyn Jackson DBA
 // Sally Weber Web Developer 2015-12-18
 
+// Inputs: search string
+// Process: filter in every fields
+// outputs: search results
+
 fn main() {
     println!("Hello, world!");
 }
